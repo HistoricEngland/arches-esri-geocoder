@@ -41,4 +41,4 @@ The Arches ESRI Geocoder references need to be added directly into the database 
 INSERT INTO public.geocoders(
 	geocoderid, name, component, api_key)
 	VALUES ('10000000-0000-0000-0000-010000000001', 'Esri', 'views/components/geocoders/esrigeocoder', '');
-    ```
+```
