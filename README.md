@@ -37,8 +37,6 @@ The first part of the geocoder creates an array from the results returned by the
 
 The Arches ESRI Geocoder references need to be added directly into the database as there's no command line method of doing so at present.  Use the following SQL statement to add the row to the public.geocoders table and then commit it.
 
-``SQL
-INSERT INTO public.geocoders(
+``INSERT INTO public.geocoders(
 	geocoderid, name, component, api_key)
-	VALUES ('10000000-0000-0000-0000-010000000001', 'Esri', 'views/components/geocoders/esrigeocoder', '');
-    ``
+	VALUES ('10000000-0000-0000-0000-010000000001', 'Esri', 'views/components/geocoders/esrigeocoder', '');``
