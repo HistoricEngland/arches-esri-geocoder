@@ -42,3 +42,9 @@ INSERT INTO public.geocoders(
 	geocoderid, name, component, api_key)
 	VALUES ('10000000-0000-0000-0000-010000000001', 'Esri', 'views/components/geocoders/esrigeocoder', '');
 ```
+Now ensure that the following setting is added to your settings.py file.
+
+```py
+#ESRI Geocoder - Comment this line out to use the mapbox geocoder.
+DEFAULT_GEOCODER = "10000000-0000-0000-0000-010000000001"
+```
