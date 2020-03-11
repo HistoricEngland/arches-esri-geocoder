@@ -8,6 +8,16 @@ function (ko, mapboxgl, arches, BaseGeocoderViewModel) {
             this.anchorLayerId = params.anchorLayerId;
             this.apiKey = params.api_key() || arches.mapboxApiKey
             this.map = params.map;
+            this.pointstyle = {
+                "id": "geocode-point",
+                "source": "geocode-point",
+                "type": "circle",
+                "maxzoom": 20,
+                "paint": {
+                    "circle-radius": 5,
+                    "circle-color": "#FF0000"
+                }
+            };
 
             this.options.subscribe(function () {
                 self.selection(null);
