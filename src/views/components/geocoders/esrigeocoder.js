@@ -48,11 +48,12 @@ function (ko, mapboxgl, arches, BaseGeocoderViewModel) {
                                 rObject['geometry']['coordinates'] = [rL['location']['x'],rL['location']['y']]
                                 returnObjects.push(rObject)
                             
-                            if(returnObjects.length == resultLocations.length){
-                                resolve(returnObjects);
                             }
-                            
-                            }
+                            resolve(returnObjects);
+                        },
+                        error: function(jqXHR,textStatus,errorThrow){
+                            console.log("GeocodeServer/findAddressCandidates call errored",textStatus,errorThrow);
+                            resolve([]);
                         }
                     })
                 })
