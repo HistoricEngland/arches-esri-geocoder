@@ -1,4 +1,7 @@
 # arches-esri-geocoder
+
+**NOTE: This is currently only compatible with Arches v4.x as the map component was rewritten at v5.0 and the geocoder is no longer modular.**
+
 A custom Arches geocoder that uses the ESRI World Geocoding services as an alternative to the standard Mapbox geocoder.
 ## Files
 The Arches ESRI Geocoder is comprised of two files in the following locations within a project:
